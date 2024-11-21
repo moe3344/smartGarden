@@ -1,0 +1,12 @@
+projects:
+  smartgarden:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: api/API.ts
+        docsFilePath: graphql
